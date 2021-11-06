@@ -489,7 +489,7 @@ async def ytplay(_, message: Message):
             f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add @{ASSISTANT_NAME} manually</i>"
         )
         return
-    await lel.edit("🔎>")
+    await lel.edit("Searching the song....")
     message.from_user.id
     message.from_user.first_name
 
@@ -533,8 +533,8 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
-                InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
+                InlineKeyboardButton("Menu", callback_data="menu"),
+                InlineKeyboardButton("Close", callback_data="cls"),
             ],
             [
                 InlineKeyboardButton(
@@ -580,7 +580,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="☑️ ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ {} 😎".format(
+            caption="☑️ Request by{} 😎".format(
                 message.from_user.mention()
             ),
         )
