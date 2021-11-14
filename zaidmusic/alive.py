@@ -41,26 +41,26 @@ async def alive(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/95e785dea2717adf59de6.png",
+        photo=f"https://te.legra.ph/file/f95886fb9f39f40c5e534.png",
         caption=f"""**➮𝐳 ʜɪɪ ɪ ᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
 
-➮ **Zαιԃ Sყʂƚҽɱ Wσɾƙιɳɠ Fιɳҽ**
+➮ 𝚂𝙰𝚅𝙰𝙶𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙵𝙸𝙽𝙴
 
-➮ **ᴢᴀɪᴅ ᴠᴇʀꜱɪᴏɴ : 5.0 Lҽƚҽʂƚ**
+➮ sᴀᴠᴀɢᴇ ᴠᴇʀꜱɪᴏɴ : 5.0 Lҽƚҽʂƚ
 
-➮ **ᴍʏ ᴏᴡɴᴇʀ : [{OWNER_NAME}](https://t.me/{OWNER_NAME})**
+➮ ᴍʏ ᴏᴡɴᴇʀ : [{OWNER_NAME}](https://t.me/{OWNER_NAME})
 
-➮ **ꜱᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ : `{uptime}`**
+➮ **ꜱᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ : {uptime}**
 
-**𝚃𝚑𝚊𝚗𝚔𝚜 𝙵𝚘𝚛 𝚄𝚜𝚒𝚗𝚐 𝚣𝚊𝚒𝚍 𝙱𝚘𝚝𝚜 ♥️**""",
+𝚃𝚑𝚊𝚗𝚔𝚜 𝙵𝚘𝚛 𝚄𝚜𝚒𝚗𝚐 𝚂𝚊𝚟𝚊𝚐𝚎 𝙱𝚘𝚝 ♥️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💫 ɢʀᴏᴜᴘ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/ELECTROBOT_SUPPORT"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS"
+                        "𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=f"https://t.me/ELECTRO_UPDATES"
                     )
                 ]
             ]
